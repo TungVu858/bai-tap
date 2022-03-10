@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="a">
+<input type="number"id="b">
+<button onclick="tinhtoan()">Tính</button>
+<p id="tinh"></p>
+<script>
+    function tinhtoan() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let c = ((a+1)*b)/2;
+        document.getElementById('tinh').innerHTML="tổng từ a đến b là:" +c;
+    }
+</script>
+</body>
+</html>

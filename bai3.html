@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bước 1 tạo giao diện-->
+<!--Bước 2:tạo sự kiện click chuột-->
+<!--Bước 3:tạo id cho các thẻ trong giao diện-->
+<!--Bước 4:tạo biến và gán giá trị cho 2 thẻ input-->
+<!--Bước 5:tạo biến S = a*b-->
+<!--Bước 6:in ra màn hình-->
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="ketqua()">Tính toán</button>
+    <h1 id="result">Kết quả :</h1>
+    <script>
+        function ketqua() {
+            let num1 = +document.getElementById('num1').value;
+            let num2 = +document.getElementById('num2').value;
+            let S = num1*num2;
+            document.getElementById('result').innerHTML ="Kết quả :" + S;
+        }
+
+    </script>
+</body>
+</html>
