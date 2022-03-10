@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="a">
+<input type="number" id="b">
+<input type="number" id="c">
+<button onclick="kiemtra()">Kiểm tra</button>
+<p id="ketqua"></p>
+<script>
+    function kiemtra() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let c = +document.getElementById('c').value;
+
+        if (a===b && a===c){
+            document.getElementById('ketqua').innerHTML = "Đây là tam giác cân";
+        } else if (b===a && b ===c){
+            document.getElementById('ketqua').innerHTML = "Đây là tam giác cân";
+        // } else if (f===d && f===e){
+        //     document.getElementById('ketqua').innerHTML ="Đây là tam giác cân";
+        } else {
+            document.getElementById('ketqua').innerHTML ="Đây k là tam giác cân";
+        }
+    }
+</script>
+</body>
+</html>
