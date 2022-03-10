@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="a">
+<input type="number" id="b">
+<input type="number" id="c">
+<button onclick="kiemtra()">Kiểm tra</button>
+<p id="ketqua"></p>
+<script>
+    function kiemtra() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let c = +document.getElementById('c').value;
+        let d = b*b + c*c; //tính diện tích với cạnh huyền là a
+        let e = a*a + c*c; //tính diện tích với cạnh huyền là b
+        let f = a*a + b*b; //tính diện tính với cạnh huyền là c
+        if (d=== (a*a)){
+            document.getElementById('ketqua').innerHTML = "đây là tam giác vuông";
+        } else if (e===(b*b)){
+            document.getElementById('ketqua').innerHTML = "đây là tam giác vuông";
+        } else if (f===(c*c)){
+            document.getElementById('ketqua').innerHTML = "đây là tam giác vuông";
+        } else {
+            document.getElementById('ketqua').innerHTML = "đây k là tam giác vuông";
+        }
+    }
+</script>
+</body>
+</html>
