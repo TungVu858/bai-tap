@@ -10,53 +10,56 @@
 <p id="ketqua"></p>
 <script>
     function kiemtra() {
-        let a = document.getElementById('a').value;
-        if (a < 100) {
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 1"
-        } else if (a < 200) {
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 2";
-        } else if (a < 300) {
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 3";
-        } else if (a < 400) {
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 4";
-        } else if (a < 500) {
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 5";
-        } else if (a < 600) {
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 6";
-        } else if (a < 700) {
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 7";
-        } else if (a < 800) {
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 8";
-        } else if (a < 900) {
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 9";
-        } else if (a < 1000) {
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 10";
-        } else if (a < 1100) {
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 11";
-        } else if (a < 1200) {
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 12";
-        } else if (a < 1300) {
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 13";
-        } else if (a < 1400) {
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 14";
-        } else if (a <1500){
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 15";
-        } else if (a<1600){
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 16";
-        } else if (a<1700){
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 17";
-        } else if (a<1800){
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 18";
-        } else if (a<1900){
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 19";
-        } else if (a<2000){
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 20";
-        } else if (a<=2022){
-            document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 21";
-        }
-        else {
-            document.getElementById('ketqua').innerHTML = "Bạn đến từ tương lai à !"
-        }
+        // let a = document.getElementById('a').value;
+        // if (a < 100) {
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 1"
+        // } else if (a < 200) {
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 2";
+        // } else if (a < 300) {
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 3";
+        // } else if (a < 400) {
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 4";
+        // } else if (a < 500) {
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 5";
+        // } else if (a < 600) {
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 6";
+        // } else if (a < 700) {
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 7";
+        // } else if (a < 800) {
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 8";
+        // } else if (a < 900) {
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 9";
+        // } else if (a < 1000) {
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 10";
+        // } else if (a < 1100) {
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 11";
+        // } else if (a < 1200) {
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 12";
+        // } else if (a < 1300) {
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 13";
+        // } else if (a < 1400) {
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 14";
+        // } else if (a <1500){
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 15";
+        // } else if (a<1600){
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 16";
+        // } else if (a<1700){
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 17";
+        // } else if (a<1800){
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 18";
+        // } else if (a<1900){
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 19";
+        // } else if (a<2000){
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 20";
+        // } else if (a<=2022){
+        //     document.getElementById('ketqua').innerHTML = "Đây là thế kỷ 21";
+        // }
+        // else {
+        //    alert("Bạn đến từ tương lai à !") ;
+        // }
+        let nam = document.getElementById('a').value;
+        let theky = parseInt(nam/100) +1;
+        document.getElementById('ketqua').innerHTML = theky;
     }
 </script>
 </body>

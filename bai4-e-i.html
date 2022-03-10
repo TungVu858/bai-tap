@@ -5,25 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-    <input type="number" id="a">
-    <input type="number" id="b">
-    <input type="number" id="c">
-    <button onclick="kiemtra()">Kiểm tra</button>
-    <p id="ketqua"></p>
-    <script>
-        function kiemtra() {
-            let a = +document.getElementById('a').value;
-            let b = +document.getElementById('b').value;
-            let c = +document.getElementById('c').value;
-            let d = a+b;
-            let e = a+c;
-            let f = b+c;
-            if (d>c && e>b && f>a){
-                document.getElementById('ketqua').innerHTML = "Đây là tam giác"
-            } else {
-                document.getElementById('ketqua').innerHTML = "Đây k là tam giác"
-            }
+<input type="number" id="a">
+<input type="number" id="b">
+<input type="number" id="c">
+<button onclick="kiemtra()">Kiểm tra</button>
+<p id="ketqua"></p>
+<script>
+    function kiemtra() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let c = +document.getElementById('c').value;
+        let d = a + b;
+        let e = a + c;
+        let f = b + c;
+        if (d > c && e > b && f > a) {
+            document.getElementById('ketqua').innerHTML = "Đây là tam giác";
+        } else {
+            document.getElementById('ketqua').innerHTML = "Đây k là tam giác";
         }
-    </script>
+    }
+</script>
 </body>
 </html>
