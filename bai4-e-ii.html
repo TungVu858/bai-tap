@@ -16,13 +16,14 @@
         let b = +document.getElementById('b').value;
         let c = +document.getElementById('c').value;
 
-        if (a===b && a===c){
+        if (a===b){
             document.getElementById('ketqua').innerHTML = "Đây là tam giác cân";
-        } else if (b===a && b ===c){
+        } else if (c===a){
+            document.getElementById('ketqua').innerHTML ="Đây là tam giác cân";
+        } else if (c===b){
             document.getElementById('ketqua').innerHTML = "Đây là tam giác cân";
-        // } else if (f===d && f===e){
-        //     document.getElementById('ketqua').innerHTML ="Đây là tam giác cân";
-        } else {
+        }
+        else {
             document.getElementById('ketqua').innerHTML ="Đây k là tam giác cân";
         }
     }
